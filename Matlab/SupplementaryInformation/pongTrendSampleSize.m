@@ -22,7 +22,7 @@ timeCutoff = 2000;%1800;%3500;
 window = 600;
 
 figure;
-title(["Standard Deviation of Hit/Miss Ratio Over Time for Dataset Sizes Consisting of N Experimental Runs"]);
+title(["Standard Deviation of Hit Rate Over Time for Dataset Sizes Consisting of N Experimental Runs"]);
 stdTop = [];
 stdMid = [];
 stdBot = [];
@@ -62,7 +62,7 @@ for i = set
 
     hold off
     xlabel("Time (s)");
-    ylabel(["Standard Deviation";"(Hit/Miss Ratio)"]);
+    ylabel(["Standard Deviation";"(Hit Rate)"]);
     title(strcat('N=',num2str(i)));
     %legend(["Top" "Middle" "Bottom"], 'location', 'northeast');
     ylim([0 0.6]);
@@ -78,8 +78,8 @@ plot(set,stdMid(:,1),'g')
 plot(set,stdBot(:,1),'r')
 hold off
 xlabel("Number of Experiments");
-ylabel("Standard Deviation (Hit/Miss Ratio)");
-%title(["Hit/Miss Ratio Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
+ylabel("Standard Deviation (Hit Rate)");
+%title(["Hit Rate Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
 legend(["Top" "Middle" "Bottom"], 'location', 'northeast');
 
 subplot(1,3,2)
@@ -90,7 +90,7 @@ plot(set,stdBot(:,4),'r')
 hold off
 xlabel("Number of Experiments");
 ylabel("Mean Standard Error");
-%title(["Hit/Miss Ratio Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
+%title(["Hit Rate Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
 legend(["Top" "Middle" "Bottom"], 'location', 'northeast');
 
 subplot(1,3,3)
@@ -101,6 +101,6 @@ plot(set,stdBot(:,3),'r')
 hold off
 xlabel("Number of Experiments");
 ylabel("Mean Sample Size with Window");
-%title(["Hit/Miss Ratio Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
+%title(["Hit Rate Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
 legend(["Top" "Middle" "Bottom"], 'location', 'northwest');
 end

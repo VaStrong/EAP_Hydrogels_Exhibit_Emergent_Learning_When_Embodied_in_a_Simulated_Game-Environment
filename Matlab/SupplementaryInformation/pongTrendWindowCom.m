@@ -56,8 +56,8 @@ for i = 1:4
 
     hold off
     xlabel("Time (s)");
-    ylabel("Hit/Miss Ratio");
-    title(["Hit/Miss Ratio Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
+    ylabel("Hit Rate");
+    title(["Hit Rate Over Time for Diffrent Segments,", strcat('with a',{' '},num2str(window),' Second Window')]);
     legend(["Top" "Top Best Fit" "Middle" "Middle Best Fit" "Bottom" "Bottom Best Fit"], 'location', 'southeast');
     ylim([0 1]);
     xlim([0 timeCutoff]);

@@ -81,7 +81,7 @@ end
     hold off
 
     ylim([0 1]);
-    ylabel("Hit/Miss Ratio");
+    ylabel("Hit Rate");
 
 %-----------------------------------------------------------------------------------rally length
 yyaxis right
@@ -132,7 +132,7 @@ end
 
     xlim([0 timeCutoff]);
     xlabel("Time (s)");
-    title(["Hit/Miss Ratio for Diffrent Segments", strcat('and Rally Lengths Over Time, with a',{' '},num2str(window),' Second Window')]);
+    title(["Hit Rate for Diffrent Segments", strcat('and Rally Lengths Over Time, with a',{' '},num2str(window),' Second Window')]);
     if learn
         legend(["" "Top" "" "Middle" "" "Bottom" "" "" "" "" "Averaged Rally Length" "Rally Length Best Fit Line"], 'location', 'southwest');
     else
