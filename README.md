@@ -1,5 +1,5 @@
 # EAP_Hydrogels_Exhibit_Emergent_Learning_When_Embodied_in_a_Simulated_Game-Environment
-This repository contains all code and data used within the experiments described in the paper “EAP Hydrogels Exhibit Emergent Learning When Embodied in a Simulated Game-Environment”. All data analysis was performed using code written in the Matlab environment, using Matlab packages, and datasets constructed in Matlab. The MEA control software was written in Python. This repository also includes an example video recording of the pong game. This repository is available on Zenodo. This repository is organised into folders according to the languages used and sections of the paper.
+This repository contains all code and data used within the experiments described in the paper “EAP Hydrogels Exhibit Emergent Learning When Embodied in a Simulated Game-Environment”. All data analysis was performed using code written in the Matlab environment, using Matlab packages, and datasets constructed in Matlab. The MEA control software was written in Python, with Arduino code used to run the hydrogel interfacing hardware. This repository also includes an example video recording of the pong game. This repository is available on Zenodo. This repository is organised into folders according to the languages used and sections of the paper.
 
 ## Example Video
 Each run of the pong game generates a screen recording of the simulated pong game. The video "Example Run.mp4" is one of the recordings generated through the experiments undertaken during the research this repository belongs to. For the purposes of storage capacity, the videos speed is quadrupled, and quality is compressed. This video shows the results of a default learning experiment, where the performance gradually improves thought he course of the game to a point.
@@ -74,6 +74,9 @@ Each run of the pong game generates a screen recording of the simulated pong gam
     * "region.py"
     * "threadedPong.py"
 * "Serial_plot2.py" - The serial data plotter used to record initial current values from the sense regions for use as a baseline
+
+## Arduino
+* "Array_Driver.ino" - The arduino code that communicates with the python script via serial, and coordinates the relays and sensor communication.
 
 # Matlab Figure Commands list
 This is a list of the figures present in the paper and the accompanying Matlab function/commands that render them.
