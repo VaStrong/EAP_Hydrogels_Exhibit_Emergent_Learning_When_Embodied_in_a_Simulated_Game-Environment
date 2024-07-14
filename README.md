@@ -90,32 +90,33 @@ This is a list of the figures present in the paper and the accompanying Matlab f
 * Current Draw - Fig 6
     * `load('current data 2.mat');`
     * `CurrentPlotFull`
-* Rally and Aces Learning - Fig 7.A
+* Rally and Aces Performance - Fig 7.A
     * `load('pong data both.mat')`
     * `combinedPongRallyTrend(CombinedTablePlus,1)`
-* Rally and Aces Learning - Fig 7.B
+* Rally and Aces Performance - Fig 7.B
     * `load('pong data both.mat');`
     * `combinedPongRallyTrendAces(CombinedTablePlus)`
-* Paddle State Comparison Distribution - Fig 8.A
-    * `load('current_data_mutual_info_3.mat')`
-    * `stateHistogrames3D(paddleDataSep2, 0)`
-* Paddle State Comparison Distribution - Fig 8.B.i
-    * `ballDistMatGen`
-    * `load('ballDist.mat')`
-    * `paddleRandDistPlot(paddleRandomDist)`
-* Paddle State Comparison Distribution - Fig 8.B.ii
-    * `ballDistMatGen`
-    * `load('ballDist.mat')`
-    * `ballDistPlotterRatio(ballDist_Paddle_RatioComb,3)`
-* Entropy and Variance - Fig 9
-    * `load('current_data_mutual_info_3.mat')`
-    * `stateHisVar2(paddleDataSep2, ballDataSep3, 0)`
-* Learning Box Polts - Fig 10
+* Learning Box Polts - Fig 8
     * `load('pong data both.mat')`
     * `load('pong baseline data.mat')`
     * `load('simulation_data.mat')`
     * `load('Pong Baseline Blind.mat')`
     * `WiskersChart(CombinedTablePlus, CombinedBaseTable, CombinedSimTable, CombinedBaseTableBlind)`
+* Paddle State Comparison Distribution - Fig 98.A
+    * `load('current_data_mutual_info_3.mat')`
+    * `stateHistogrames3D(paddleDataSep2, 0)`
+* Paddle State Comparison Distribution - Fig 9.B.i
+    * `ballDistMatGen`
+    * `load('ballDist.mat')`
+    * `paddleRandDistPlot(paddleRandomDist)`
+* Paddle State Comparison Distribution - Fig 9.B.ii
+    * `ballDistMatGen`
+    * `load('ballDist.mat')`
+    * `ballDistPlotterRatio(ballDist_Paddle_RatioComb,3)`
+* Entropy and Variance - Fig 10
+    * `load('current_data_mutual_info_3.mat')`
+    * `stateHisVar2(paddleDataSep2, ballDataSep3, 0)`
+
 
 ## Supplementary Information
 * Hit Distribution - Fig S4
@@ -124,7 +125,7 @@ This is a list of the figures present in the paper and the accompanying Matlab f
 * Live Hit Distribution - Fig S5
     * `load('pong data both.mat')`
     * `hitPositions(CombinedTablePlus)`
-* Averaging Window Sizes - Fig S6
+* Hit Rate Over Time / Averaging Window Sizes - Fig S6
     * `load('pong data both.mat')`
     * `pongTrendWindowCom(CombinedTablePlus)`
 * Standard Deviation Stability - Fig S7
@@ -146,7 +147,7 @@ This is a list of the figures present in the paper and the accompanying Matlab f
 * Standard Deviation Stability Impaired Stimulation - Fig S12
     * `load('pong baseline data.mat')`
     * `pongTrendSampleSize(CombinedBaseTable)`
-    * Standard Deviation Stability Severed Stimulation - Fig S13
+* Standard Deviation Stability Severed Stimulation - Fig S13
     * `load('Pong Baseline Blind.mat')`
     * `pongTrendSampleSize(CombinedBaseTableBlind)`
 * Simulated Hit and Miss - Fig S14.A
