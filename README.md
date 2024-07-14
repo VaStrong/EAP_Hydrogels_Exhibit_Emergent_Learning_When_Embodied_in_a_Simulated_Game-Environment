@@ -1,4 +1,4 @@
-# EAP_Hydrogels_Exhibit_Emergent_Learning_When_Embodied_in_a_Simulated_Game-Environment
+# Electro-Active Polymer Hydrogels Exhibit Emergent Memory When Embodied in a Simulated Game-Environment
 This repository contains all code and data used within the experiments described in the paper “EAP Hydrogels Exhibit Emergent Learning When Embodied in a Simulated Game-Environment”. All data analysis was performed using code written in the Matlab environment, using Matlab packages, and datasets constructed in Matlab. The MEA control software was written in Python, with Arduino code used to run the hydrogel interfacing hardware. This repository also includes an example video recording of the pong game. This repository is available on Zenodo. This repository is organised into folders according to the languages used and sections of the paper.
 
 ## Example Video
